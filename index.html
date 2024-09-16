@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/images/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/mobile.css">
+
+    <title>Seção de introdução com navegação suspensa</title>
+</head>
+
+<body>
+    <header>
+        <img src="./src/images/logo.svg" alt="logo snap">
+        <nav class="content_nav"> 
+            <div class="overlay"></div>
+            <ul class="menu-principal ativo">
+                <img id="close-menu" class="close-menu" src="./src/images/icon-close-menu.svg" alt="">
+                <li id="lista-features">
+                    Features <img id="seta" class="icon-seta" src="./src/images/icon-arrow-down.svg"
+                        alt="Seta pra baixo">
+                    <ul class="sub-menu">
+                        <li><img src="./src/images/icon-todo.svg" alt="icon-todo"><a href="#">Todo List</a></li>
+                        <li><img src="./src/images/icon-calendar.svg" alt="icon-calendar"><a href="#">Calendar</a></li>
+                        <li><img src="./src/images/icon-reminders.svg" alt="icon-reminders"><a href="#">Reminders</a>
+                        </li>
+                        <li><img src="./src/images/icon-planning.svg" alt="icon-planning"><a href="#">Planning</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Company <img class="icon-seta" src="./src/images/icon-arrow-down.svg" alt="Seta pra baixo">
+                    <ul class="sub-menu company">
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Careers</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <div class="container-register-mobile">
+                    <button class="btn-login" type="button">Login</button>
+                    <button class="btn-register" type="button">Register</button>
+                </div>
+            </ul>
+        </nav>
+        <div class="container-register-desktop">
+            <button class="btn-login" type="button">Login</button>
+            <button class="btn-register" type="button">Register</button>
+        </div>
+        <div class="menu-hamburguer"><img id="open-menu" class="icon-menu" src="./src/images/icon-menu.svg" alt="icon menu hamburguer">
+        </div>
+    </header>
+
+    <main>
+        <div class="container-informations">
+            <h1>Make remote work</h1>
+            <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
+                productivity soar.</p>
+            <button class="btn-learnmore" type="button">Learn more</button>
+            <ul class="list-client">
+                <li><img src="./src/images/client-databiz.svg" alt="logo client-databiz"></li>
+                <li><img src="./src/images/client-audiophile.svg" alt="logo client-audiophile"></li>
+                <li><img src="./src/images/client-meet.svg" alt="logo client-meet"></li>
+                <li><img src="./src/images/client-maker.svg" alt="logo client-maker"></li>
+            </ul>
+        </div>
+        <picture>
+            <source media="(max-width:500px)" srcset="src/images/image-hero-mobile.png">
+            <img class="hero-img" src="./src/images/image-hero-desktop.png" alt="imagem hero desktop">
+        </picture>
+    </main>
+    
+    <script src="./src/index.js"></script>
+</body>
+
+</html>

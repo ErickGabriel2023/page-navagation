@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Epilogue", sans-serif;
+    background-color: var(--almost-white);
+    height: 100dvh;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px 10px 40px;
+}
+
+.menu-hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+header .content_nav{
+    width: 73%;
+}
+
+header .content_nav .menu-principal {
+    display: flex;
+    gap: 40px;
+    font-size: 14px;
+    margin-left: 40px;
+    position: relative;
+}
+
+header .close-menu {
+    display: none;
+}
+
+header .sub-menu {
+    display: none;
+}
+
+header .menu-principal li {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--medium-gray);
+}
+header .menu-principal li:hover {
+    color: var(--almost-black);
+    font-weight: 600;
+}
+
+header .menu-principal li .icon-seta {
+    margin-left: 4px;
+}
+
+header .menu-principal li:hover .icon-seta {
+    transform: rotate(180deg);
+    transition: 0.3s;
+
+}
+
+header .sub-menu a {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+header .menu-principal li .sub-menu li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 16px;
+}
+
+header .menu-principal li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    left: -60px;
+    background-color:  var(--almost-white);
+    width: 153px;
+    padding: 30px 16px 16px 16px;
+    box-shadow: 1px 1px 30px #cfcfcf;
+    border-radius: 10px;
+    
+}
+
+header .menu-principal li:hover .sub-menu.company {
+    left: 118px;
+    width: 110px;
+}
+
+.container-register-mobile {
+    display: none;
+}
+
+.container-register-desktop {
+    display: flex;
+    gap: 40px;
+}
+
+.container-register-desktop .btn-login, .container-register-mobile .btn-login {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    width: 40px;
+    font-family: "Epilogue";
+    color: var(--medium-gray);
+}
+.container-register-desktop .btn-login:hover, .container-register-mobile .btn-login:hover {
+    color: var(--almost-black);
+    font-weight: 600;
+} 
+
+.container-register-desktop .btn-register, .container-register-mobile .btn-register {
+    background-color: transparent;
+    padding: 13px 22px;
+    border: 2px solid var(--medium-gray);
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 110px;
+    font-family: "Epilogue";
+    color: var(--medium-gray);
+    cursor: pointer;
+}
+.container-register-desktop .btn-register:hover, .container-register-mobile .btn-register:hover {
+    color: var(--almost-black);
+    border-color: var(--almost-black);
+    font-weight: 600;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 100px;
+    padding: 0px 30px;
+    min-height: calc(100vh - 130px);
+}
+
+main .container-informations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-informations h1 {
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -1.111px;
+    max-width: 530px;
+    margin-bottom: 50px;
+    color: var(--almost-black);
+}
+
+.container-informations p {
+    font-size: 18px;
+    font-weight: 500;
+    width: 445px;
+    line-height: 28px;
+    margin-bottom: 50px;
+    color: var(--medium-gray);
+}
+
+.container-informations .btn-learnmore {
+    align-self: flex-start;
+    padding: 17px 28px;
+    font-size: 18px;
+    font-family: "Epilogue";
+    font-weight: 700;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 100px;
+    background-color: var(--almost-black);
+    color: var(--almost-white);
+    border: 1px solid transparent;
+}
+.container-informations .btn-learnmore:hover {
+    background-color: transparent;
+    border: 1px solid var(--almost-black);
+    color: var(--almost-black);
+    transition: 0.2s;
+}
+
+.container-informations .list-client {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+picture {
+    width: 450px;
+}
+
+main .hero-img {
+    width: 100%;
+}
